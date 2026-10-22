@@ -6,6 +6,7 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -106,6 +107,9 @@ export default {
     title: 'Orders',
     description: 'View and manage customer orders',
     allOrders: 'All Orders',
+    submittedOrders: 'Submitted Orders',
+    noSubmittedOrders: 'No restock orders have been submitted yet',
+    submittedLoadFailed: 'Failed to load submitted orders',
     totalOrders: 'Total Orders',
     totalRevenue: 'Total Revenue',
     avgOrderValue: 'Avg Order Value',
@@ -125,7 +129,9 @@ export default {
       totalValue: 'Total Value',
       status: 'Status',
       expectedDelivery: 'Expected Delivery',
-      actualDelivery: 'Actual Delivery'
+      actualDelivery: 'Actual Delivery',
+      submittedDate: 'Submitted',
+      leadTime: 'Lead Time (days)'
     }
   },
 
@@ -185,6 +191,47 @@ export default {
       change: 'Change',
       trend: 'Trend',
       period: 'Period'
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Plan a restock order within your budget, prioritised by forecasted demand',
+    budget: 'Budget',
+    budgetHint: 'Items with rising demand are funded first',
+    recommendations: 'Recommended Restock',
+    summary: {
+      orderTotal: 'Order Total',
+      budgetRemaining: 'Budget Remaining',
+      leadTime: 'Est. Delivery Lead Time',
+      days: '{count} days',
+      none: 'N/A'
+    },
+    table: {
+      include: 'Include',
+      sku: 'SKU',
+      itemName: 'Item Name',
+      trend: 'Trend',
+      unitCost: 'Unit Cost',
+      quantity: 'Recommended Qty',
+      lineTotal: 'Line Total',
+      leadTime: 'Lead Time (days)',
+      note: 'Note'
+    },
+    skipped: 'Excluded',
+    notFunded: 'Over budget',
+    partial: 'Partial quantity',
+    noItems: 'No items fit the current budget',
+    placeOrder: 'Place Order',
+    submitting: 'Submitting...',
+    orderFailed: 'Failed to place the order. Please try again.',
+    loadFailed: 'Failed to load demand forecasts',
+    confirmation: {
+      title: 'Order submitted',
+      orderNumber: 'Order number',
+      expectedDelivery: 'Expected delivery',
+      viewOrders: 'View in Orders'
     }
   },
 
